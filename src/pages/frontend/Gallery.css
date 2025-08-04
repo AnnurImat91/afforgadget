@@ -1,0 +1,587 @@
+.impact-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 10%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 600px;
+  margin-top: 0px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 150px;
+  line-height: 1.3;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.highlight {
+  color: #fff;
+  font-style: italic;
+}
+
+/* Styling for the gallery container */
+/* Styling for the gallery container */
+.gallery-container {
+  padding: 40px;
+  text-align: center;
+  max-width: 1200px;  /* Optional, limits width for better layout */
+  margin: 0 auto;  /* Centers the gallery container */
+}
+
+.gallery-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Grid layout with 3 images per row */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+  gap: 20px;  /* Spacing between images */
+  justify-items: center;  /* Center images horizontally */
+}
+
+/* Styling for individual image items */
+.image-item {
+  width: 100%;  /* Make each image take full width within its grid item */
+  max-width: 380px;  /* Limits max width for images to fit */
+  height: 250px;  /* Fixed height for each image */
+  overflow: hidden;
+  border-radius: 10px;  /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds subtle shadow for depth */
+}
+
+/* Styling for the images inside the grid */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures images cover the container without distortion */
+  border-radius: 10px;  /* Rounded corners for the image */
+}
+
+/* Styling for the 'View More' button */
+.view-more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px; /* Menambah jarak atas untuk menurunkan tombol */
+  margin-bottom: 20px; /* Menambah jarak bawah untuk memberi ruang di bawah tombol */
+  cursor: pointer;
+  text-decoration: none;  /* Menghapus garis bawah pada link */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* SocialMediaContent.css */
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.text-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  text-align: justify;
+  padding: 55px;
+}
+
+.profiles-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  width: 28%;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.instagram {
+  background-color: #ffffff;
+}
+
+.tiktok {
+  background-color: #010101;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.profile-info1 h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+}
+
+.profile-info1 p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.text-down{
+  font-size: 45px;
+  margin-top: 50px;
+  text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  transition: color 0.3s;
+}
+.text-down:hover {
+  color: #ddd;
+}
+
+.fade-line {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.fade-delay-1 { animation-delay: 0s; }
+.fade-delay-2 { animation-delay: 0.3s; }
+.fade-delay-3 { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile: Lebih kecil dari 600px */
+@media (max-width: 600px) {
+  /* Tambahkan aturan CSS untuk perangkat mobile */
+}
+
+/* RESPONSIVE FOR 391px SCREEN WIDTH */
+@media (max-width: 391px) {
+  /* Hero Section */
+  .background-image {
+    height: 50vh; /* Ensure the hero image height is appropriate */
+  }
+
+  .hero-text {
+    top: 7%; /* Adjust text position */
+    left: 20px; /* Align text properly */
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.8rem;
+  }
+
+  /* Image Grid */
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+    gap: 10px;
+  }
+
+  .image-item {
+    width: 100%;
+    max-width: 320px; /* Image width limited to fit grid */
+    height: 200px;
+  }
+
+  /* View More Button */
+  .view-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Social Media Profiles */
+  .social-media-container {
+    padding: 40px 20px;
+  }
+
+  .profiles-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .profile-box {
+    width: 80%;
+  }
+
+  /* Profile Info Text */
+  .profile-info h3 {
+    font-size: 16px;
+  }
+
+  .profile-info p {
+    font-size: 13px;
+  }
+
+  /* Text Down */
+  .text-down {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .intro-text{
+    font-size: 20px;
+    margin-top: -70px;
+  }
+}
+
+
+/* RESPONSIVE - Antara 430px dan 932px */
+@media (min-width: 430px) and (max-width: 932px) {
+  /* Mengatur hero text menjadi rata kiri */
+    .background-image{
+    height: 400px;
+  }
+  .impact-hero {
+    margin-top: 120px;
+  }
+
+  .hero-text {
+    top: 180px;
+    text-align: left; /* Merubah menjadi rata kiri */
+    padding: 20px;
+    left: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem; /* Ukuran font untuk perangkat dengan lebar antara 430px - 932px */
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  /* Grid layout untuk galeri dengan gambar lebih kecil */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 kolom untuk tablet */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /* Styling untuk tombol 'View More' */
+  .view-more-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .view-more-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Profil sosial media */
+  .social-media-container {
+    padding: 40px 20px;
+  }
+
+  /* Menata profil sosial media secara vertikal */
+  .profiles-container {
+    display: flex;
+    flex-direction: column; /* Mengubah menjadi vertikal */
+    align-items: center;
+    gap: 20px;  /* Memberikan jarak antar profil */
+  }
+
+  /* Container dan box untuk profil sosial media */
+  .profile-box {
+    width: 300px; /* Lebar tetap untuk profil sosial media */
+    padding: 15px;
+  }
+
+  /* Teks intro untuk sosial media */
+  .intro-text {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  /* Profil media sosial Instagram */
+  .instagram {
+    background-color: #ffffff;
+  }
+
+  .profile-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  /* Profil media sosial TikTok */
+  .tiktok {
+    background-color: #010101;
+  }
+
+  /* Desain text-down */
+  .text-down {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  /* Hover efek pada text-down */
+  .text-down:hover {
+    color: #ddd;
+  }
+
+  /* Gallery Images: Menambahkan responsive untuk gambar */
+  .gallery-image {
+    object-fit: cover;
+    height: 200px; /* Mengurangi tinggi gambar gallery */
+  }
+}
+
+
+/* Tablet: Antara 600px dan 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  .background-image{
+    height: 400px;
+  }
+    .impact-hero {
+    margin-top: 120px; /* Memberikan margin untuk membuat ruang */
+  }
+
+  .hero-text {
+    top: 220px; /* Mengatur posisi teks di dalam hero section */
+    text-align: left;
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem; /* Ukuran font untuk perangkat tablet */
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  /* Grid layout untuk galeri */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 kolom untuk tablet */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /* Styling untuk tombol 'View More' */
+  .view-more-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .view-more-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Profil sosial media */
+  .social-media-container {
+    padding: 40px 20px;
+  }
+
+  /* Container dan box untuk profil sosial media */
+  .profile-box {
+    width: 300px; /* Lebar tetap untuk profil sosial media */
+    padding: 15px;
+  }
+
+  /* Teks intro untuk sosial media */
+  .intro-text {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  /* Profil media sosial Instagram */
+  .instagram {
+    background-color: #ffffff;
+  }
+
+  .profile-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  /* Profil media sosial TikTok */
+  .tiktok {
+    background-color: #010101;
+
+  }
+
+  /* Desain text-down */
+  .text-down {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  /* Hover efek pada text-down */
+  .text-down:hover {
+    color: #ddd;
+  }
+}
+
+/* Desktop: Di atas 900px */
+@media (min-width: 900px) {
+  .impact-hero{
+    top: 100px;
+  }
+  .hero-text{
+    top: 150px;
+  }
+  .hero-text h1{
+    font-size: 50px;
+  }
+  .intro-text{
+    font-size: 30px;
+  }
+  .text-down{
+    font-size: 30px;
+  }
+  .profile-box{
+    width: 400px;
+  }
+  .text-container{
+    margin-top: -180px;
+
+  }
+  .social-media-container{
+    padding: 90px;
+  }
+  .text-down{
+    margin-bottom: 50px;
+  }
+}
+
+/* Larger devices (Tablet and above, example for large screens) */
+@media (min-width: 1024px) {
+  .hero-text{
+    top: 140px;
+  }
+  .intro-text{
+    font-size: 30px;
+  }
+  .text-down{
+    font-size: 30px;
+  }
+  .profile-box{
+    width: 400px;
+  }
+
+}
+
+/* Extra Large devices (For very large screens, e.g., large desktop monitors) */
+@media (min-width: 1200px) {
+  .hero-text{
+    top: 200px;
+  }
+}

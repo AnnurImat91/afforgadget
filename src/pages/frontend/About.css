@@ -1,0 +1,697 @@
+.about-section {
+  background-color: #000409;
+  padding: 60px 0; /* hilangkan padding kiri-kanan agar benar-benar bisa nempel */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;         
+  gap: 20px;
+  padding: 0 40px;     
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.left-text {
+  flex: 1;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: white;
+  margin-left: 40px;
+}
+
+.right-text {
+  flex: 1;
+  text-align: justify;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  color: white;
+  margin-top: 50px;
+  margin-right: 40px;
+}
+
+.blue-text {
+  color: #0d4e87; /* warna biru */
+  font-weight: 600;
+}
+
+.bold-white-text {
+  color: white;
+  font-weight: 700;
+}
+
+.about-hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay-text {
+  position: absolute;
+  bottom: 40px; /* bawah kiri */
+  left: 40px;
+  color: white;
+  font-size: clamp(2rem, 6vw, 5rem); /* responsif besar */
+  font-weight: 800;
+  line-height: 1.2;
+  z-index: 10;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.highlight {
+  display: inline-block;
+}
+
+.blue-text {
+  color: #0d4e87;
+}
+
+.enterprise-section {
+  background: linear-gradient(to top, #000409 100% , #000000 100%);
+  padding: 60px 40px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.enterprise-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1 1 40%;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #eee;
+  max-width: 90%;
+}
+
+.image-content {
+  flex: 1 1 55%;
+  display: flex;
+  gap: 20px;
+}
+
+.image-box {
+  position: relative;
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;          
+}
+
+.image-box img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-box:last-child {
+  flex-grow: 1.5;
+}
+
+.impact-section {
+  background: linear-gradient(to bottom, #000409 100% , #000000 100%);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.impact-section .enterprise-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+
+.impact-section .tall-image-box {
+  flex: 0 0 230px;
+  height: 100%;
+}
+
+.impact-section .tall-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.impact-section .right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-section .right-content h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.impact-section .image-and-text {
+  display: flex;
+  gap: 20px;
+}
+
+.impact-section .image-box {
+  position: relative;
+  flex: 0 0 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.impact-section .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.impact-section .text-content {
+  flex: 1;
+  font-size: 4rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+.opening-hours-section {
+   background: linear-gradient(to bottom, #000000 0%, #000000 95%, #001735 100%);
+  padding: 80px 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.opening-hours-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+.image-side img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-side {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2;
+  white-space: pre-line;
+}
+.count-section {
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+}
+
+.count-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.count-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.number-box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.numbers-summary.visible .number-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.number-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.number-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+/* RESPONSIVE */
+
+
+/* Responsif untuk perangkat dengan lebar max 391px */
+@media (max-width: 391px) {
+  
+  .hero-image{
+  width: 100%;
+  height: 500px; /* Atur tinggi sesuai kebutuhan */
+  object-fit: cover;
+  object-position: top; /* Fokus pada bagian atas gambar */
+  display: block;
+  clip-path: inset(0 0 0 0); /* Atur pemotongan sesuai kebutuhan */
+  overflow: hidden;
+  }
+  .hero-overlay-text{
+    top: 340px;
+  }
+  .main-content {
+    flex-direction: column; /* Mengubah elemen menjadi vertikal */
+    align-items: center; /* Menjaga elemen tetap terpusat secara horizontal */
+    justify-content: center;
+    padding: 10px; 
+  }
+
+  .left-text {
+    font-size: 28px; /* Menurunkan ukuran font agar sesuai dengan layar kecil */
+    margin-top: 20px;
+    margin-left: 0; /* Menghilangkan margin kiri untuk memberikan lebih banyak ruang */
+    text-align: left; /* Menjaga teks rata kiri */
+  }
+
+  .right-text {
+    font-size: 16px; /* Menurunkan ukuran font untuk teks panjang */
+    text-align: justify;
+    max-width: 100%; /* Membuat lebar fleksibel */
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.4; /* Mengatur jarak antar baris agar lebih nyaman dibaca */
+  }
+
+  .logo {
+    margin-top: 20px; /* Memberikan sedikit ruang antara logo dan bagian atas */
+    text-align: center; /* Memastikan logo berada di tengah */
+  }
+
+  .main-content .logo img {
+    width: 80%; /* Mengurangi ukuran logo agar pas dengan layar kecil */
+    max-width: 200px; /* Membatasi ukuran maksimal logo */
+  }
+
+  /* Menyusun grid untuk card */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Menjadikan grid satu kolom untuk layar kecil */
+    gap: 20px; /* Menambahkan jarak antar card */
+    padding: 20px;
+    justify-items: center; /* Menjaga card tetap terpusat */
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px; /* Membatasi lebar card agar tidak terlalu besar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.619));
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem; /* Menyesuaikan ukuran judul card */
+  }
+
+  .card a {
+    font-size: 1rem;
+    padding: 12px 30px;
+    margin-top: 10px;
+  }
+
+  /* Menyusun gambar dan teks dalam section */
+  .enterprise-section {
+    padding: 30px 15px; /* Mengurangi padding untuk tampilan lebih rapat */
+    background: linear-gradient(to top, #000409 100%, #000000 100%);
+  }
+
+  .enterprise-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enterprise-container .text-content {
+    text-align: center;
+    font-size: 1.2rem; /* Menyesuaikan ukuran teks */
+  }
+
+  .enterprise-container .image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: auto;
+  }
+
+  /* Impact Section */
+  .impact-section .enterprise-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .impact-section .image-and-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .impact-section .image-box img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Opening Hours Section */
+  .opening-hours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .text-side {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  /* Count Section */
+  .count-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Menjadi satu kolom pada layar kecil */
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .count-card {
+    padding: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .count-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  /* Menambahkan jarak antara angka dan teks */
+  .count-card p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsif antara 430px dan 932px */
+@media (min-width: 430px) and (max-width: 932px) {
+  /* Menata kontainer utama */
+  .main-content {
+    flex-direction: column; /* Mengubah elemen menjadi vertikal */
+    align-items: center; /* Menjaga elemen tetap terpusat secara horizontal */
+    justify-content: center;
+    padding: 20px; /* Memberikan jarak di sekitar elemen */
+  }
+
+  .left-text{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 0px; /* Memberikan jarak lebih ke kiri */
+    text-align: left;
+  }
+  .right-text{
+    font-size: 20px;
+    margin-top: -2px;
+    text-align: justify;
+    max-width: 800px; /* Membatasi lebar agar tidak terlalu panjang ke bawah */
+    width: 100%; /* Membuat lebar fleksibel */
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin-top: 20px; /* Memberikan sedikit ruang antara logo dan bagian atas */
+    text-align: center; /* Memastikan logo berada di tengah */
+  }
+
+  .main-content .logo img {
+    width: 100%;
+    max-width: 250px; /* Menjaga ukuran logo agar tidak terlalu besar */
+  }
+
+  /* Menyusun grid untuk card */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar yang sama */
+    gap: 20px; /* Menambahkan jarak antar card */
+    padding: 20px;
+    justify-items: center; /* Menjaga card tetap terpusat */
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px; /* Membatasi lebar card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255, 255, 255, 0.619));
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card a {
+    font-size: 1rem;
+    padding: 12px 30px;
+    margin-top: 10px;
+  }
+
+  /* Menyusun gambar dan teks dalam section */
+  .enterprise-section {
+    padding: 40px 20px;
+    background: linear-gradient(to top, #000409 100%, #000000 100%);
+  }
+
+  .enterprise-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Menata gambar dengan teks pada enterprise-section */
+  .enterprise-container .text-content {
+    text-align: center;
+  }
+
+  .enterprise-container .image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: auto;
+  }
+
+  /* Impact Section */
+  .impact-section .enterprise-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .impact-section .image-and-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .impact-section .image-box img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Opening Hours Section */
+  .opening-hours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .text-side {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  /* Count Section */
+  .count-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Menjadi satu kolom pada layar kecil */
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .count-card {
+    padding: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .count-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  /* Menambahkan jarak antara angka dan teks */
+  .count-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Tambahkan aturan CSS untuk perangkat mobile */
+}
+/* Tablet: Antara 600px dan 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Tambahkan aturan CSS untuk perangkat tablet */
+}
+
+/* Desktop: Di atas 900px */
+@media (min-width: 900px) {
+  .container .left-text{
+    margin-top: 100px;
+  }
+  .image-box{
+    width: 40px;
+  }
+  
+}
+
+/* Larger devices (Tablet and above, example for large screens) */
+@media (min-width: 1024px) {
+  .right-text{
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+  .image-box{
+    width: 40px;
+  }
+  .container .left-text{
+    margin-top: 20px;
+  }
+}
+
+/* Extra Large devices (For very large screens, e.g., large desktop monitors) */
+@media (min-width: 1200px) {
+  .right-text{
+    margin-top: 0px;
+  }
+}
+
+
+
