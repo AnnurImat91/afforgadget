@@ -17,7 +17,7 @@ const server = http.createServer(app);
 // Inisialisasi Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",  // Ganti dengan URL frontend Anda jika diperlukan
+    origin: "*",  // Ganti dengan URL frontend Anda jika diperlukan
     methods: ["GET", "POST"]
   }
 });
@@ -101,7 +101,10 @@ app.post("/api/send-feedback", async (req, res) => {
     await newFeedback.save();
 
     // Kirim email notifikasi ke admin setelah feedback disimpan
-    sendEmailToAdmin(`Nama: ${name}\nEmail: ${email}\nTelepon: ${phone}\nPesan: ${message}\nRating: ${rating}`);
+    sendEmailToAdmin(
+      `Nama: ${name}\nEmail: ${email}\nTelepon: ${phone}\nPesan: ${message}\nRating: ${rating}`
+    );
+
 
     // Kirim response sukses ke frontend
     res.status(200).json({ message: "Feedback berhasil disimpan" });
